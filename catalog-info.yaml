@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: Test
   annotations:
-    github.com/project-slug: ndhananj-tibco/Test
+    github.com/project-slug: TIBCO-Hub-Backstage/TibcoHub_Test_Repo
 spec:
   type: other
   lifecycle: unknown
