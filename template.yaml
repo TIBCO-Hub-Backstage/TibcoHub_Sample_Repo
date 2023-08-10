@@ -1,9 +1,9 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: bwce-template-test2
+  name: bwce-template-test3
   title: Timer Log Template
-  description: Create a new BWCE basic Timer Log project with Documentation
+  description: Create a new BWCE basic Timer Log
   tags:
     - tibco
     - bwce
