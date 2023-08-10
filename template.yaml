@@ -28,10 +28,6 @@ spec:
           title: Description
           type: string
           description: A description for the BWCE Project
-        returnprop:
-          title: Return Value
-          type: string
-          description: The value that the BWCE Project should return
         owner:
           title: Owner
           type: string
@@ -51,6 +47,9 @@ spec:
           ui:options:
             allowedHosts:
               - github.com
+            allowedOrganizations:
+              - TIBCO-Hub-Backstage
+                          
 
   # This template is meant to be used on top of an existing template.
   # By adding the following and fetching from an absolute URL you can
@@ -60,13 +59,12 @@ spec:
       name: BWCE Skeleton
       action: fetch:template
       input:
-        url: ./skeleton-hw
+        url: /
         values:
           name: ${{ parameters.name }}
           description: ${{ parameters.description }}
           destination: ${{ parameters.repoUrl | parseRepoUrl }}
           owner: ${{ parameters.owner }}
-          returnprop: ${{ parameters.returnprop }}
 
     - id: publish
       name: Publish
