@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpws:process exitOnStandardFault="no" name="test2.Process"
+<bpws:process exitOnStandardFault="no" name="${{values.name | dump}}"
     suppressJoinFailure="yes"
     targetNamespace="http://xmlns.example.com/20230615145011"
     xmlns:bpws="http://docs.oasis-open.org/wsbpel/2.0/process/executable"

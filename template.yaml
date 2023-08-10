@@ -1,15 +1,14 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: bwce-template-hw
-  title: BWCE Template (HW)
-  description: Create a new BWCE project with Documentation
+  name: bwce-template-test2
+  title: BWCE Template for basic Timer Log
+  description: Create a new BWCE basic Timer Log project with Documentation
   tags:
     - tibco
     - bwce
-    - recommended
 spec:
-  owner: ACME
+  owner: operational-department
   type: service
 
   parameters:
@@ -81,13 +80,6 @@ spec:
         repoContentsUrl: ${{ steps.publish.output.repoContentsUrl }}
         catalogInfoPath: "/catalog-info.yaml"
 
-    - id: jenkinsEarBuild
-      name: Trigger Jenkins EAR Build
-      action: tibco:jenkins-trigger-ear-build
-      input:
-        name: ${{ parameters.name }}
-        job: Build_BWCE_EAR
-
   output:
     links:
       - title: Repository
@@ -95,6 +87,3 @@ spec:
       - title: Open in catalog
         icon: catalog
         entityRef: ${{ steps.register.output.entityRef }}
-      - title: Open Jenkins Job
-        icon: dashboard
-        url: ${{ steps.jenkinsEarBuild.output.jobLink }}
