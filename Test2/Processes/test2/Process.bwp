@@ -19,7 +19,7 @@
         </task>
         <task name="Logger">
             <endingVariables>
-                <variable>Log_New-input</variable>
+                <variable>Logger-input</variable>
             </endingVariables>
         </task>
     </tibex:VariableDescriptor>
@@ -435,7 +435,7 @@
         <bpws:variable element="ns:ProcessContext"
             name="_processContext" sca-bpel:internal="true"/>
         <bpws:variable element="ns0:TimerOutputSchema" name="Timer" sca-bpel:internal="true"/>
-        <bpws:variable element="ns1:ActivityInput" name="Log_New-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns1:ActivityInput" name="Logger-input" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -495,7 +495,7 @@
                 </tibex:extActivity>
             </bpws:extensionActivity>
             <bpws:extensionActivity>
-                <tibex:activityExtension inputVariable="Log_New-input"
+                <tibex:activityExtension inputVariable="Logger-input"
                     name="Logger"
                     tibex:xpdlId="69c04f85-f9d9-4a97-a94b-e5b392924008" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
