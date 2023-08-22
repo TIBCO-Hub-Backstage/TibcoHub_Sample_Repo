@@ -17,7 +17,7 @@
                 <variable>Timer</variable>
             </endingVariables>
         </task>
-        <task name="Log_New">
+        <task name="Logger">
             <endingVariables>
                 <variable>Log_New-input</variable>
             </endingVariables>
@@ -496,7 +496,7 @@
             </bpws:extensionActivity>
             <bpws:extensionActivity>
                 <tibex:activityExtension inputVariable="Log_New-input"
-                    name="Log_New"
+                    name="Logger"
                     tibex:xpdlId="69c04f85-f9d9-4a97-a94b-e5b392924008" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="CallProcessToLog"/>
